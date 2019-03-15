@@ -3,9 +3,10 @@
   Conductor(Mosby) has been used in place of fragments.
   This app is using Data Binding for binding ui components to layout files which reduses much boiler plate code.
   
-  The app locates the nearby rent houses, hotels, lodging and real-estates, based on both: 
-  ->user current location and 
-  ->given address
+  The app locates the nearby rent houses, hotels, lodging and real-estates, 
+  based on both: 
+  --user current location and 
+  --given address
   within a radius of of selectable distances ranging from 1km to 10km.
   
   The places are located 
