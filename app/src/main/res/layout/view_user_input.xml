@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toTopOf="parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.appcompat.widget.AppCompatEditText
+		android:layout_width="match_parent"
+		android:id="@+id/addressEditText"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/spacing_small"
+		android:layout_marginRight="@dimen/spacing_small"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:hint="Where?"/>
+	<androidx.appcompat.widget.AppCompatButton
+		android:layout_width="70dp"
+		android:layout_height="20dp"
+		android:id="@+id/searchAddressButton"
+		android:textColor="@color/white"
+		android:layout_marginRight="@dimen/spacing_normal"
+		android:background="@color/grey_dark"
+		app:layout_constraintTop_toTopOf="@id/addressEditText"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBaseline_toBaselineOf="@id/addressEditText"
+		android:text="Search"/>
+	<androidx.appcompat.widget.AppCompatButton
+		android:layout_width="wrap_content"
+		android:layout_height="38dp"
+		android:id="@+id/searchUserLocationButton"
+		android:textColor="@color/white"
+		android:gravity="center_horizontal"
+		android:background="@color/blue_dark_sky"
+		android:drawableLeft="@drawable/ic_my_location_black_24dp"
+		app:layout_constraintTop_toBottomOf="@id/addressEditText"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		android:padding="@dimen/spacing_small"
+		android:text="Your Location"/>
+
+
+	<androidx.appcompat.widget.AppCompatTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/selectRadiusTV"
+			android:textSize="15sp"
+			android:visibility="visible"
+			app:layout_constraintBaseline_toBaselineOf="@id/radiusSpinner"
+			app:layout_constraintTop_toBottomOf="@id/searchUserLocationButton"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toStartOf="@id/radiusSpinner"
+			android:text="Select Distance: "/>
+	<androidx.appcompat.widget.AppCompatSpinner
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/radiusSpinner"
+		android:entries="@array/radius"
+		android:visibility="visible"
+		android:gravity="center_horizontal"
+		app:layout_constraintTop_toBottomOf="@id/searchUserLocationButton"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/selectRadiusTV"
+		android:layout_marginTop="@dimen/spacing_normal"
+		android:padding="@dimen/spacing_small"
+		android:text="Your Location"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
