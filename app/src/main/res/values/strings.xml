@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RentGenie</string>
+    <string name="appbar_scrolling_view_behavior" />
+    <string name="commercial">Commercial</string>
+    <string name="residential">Residential</string>
+    <string name="input_location_hint">Enter address</string>
+    <string name="use_my_location">USE YOUR LOCATION</string>
+    <string name="spinner_text">Select Distance</string>
+    <string name="err_msg_generic">Something Went Wrong</string>
+    <string name="go">GO</string>
+    <string-array name="km_array">
+        <item>1km</item>
+        <item>2km</item>
+        <item>3km</item>
+        <item>5km</item>
+        <item>10km</item>
+    </string-array>
+</resources>
