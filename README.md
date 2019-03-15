@@ -9,7 +9,7 @@
   --given address
   within a radius of of selectable distances ranging from 1km to 10km.
   
-  The places are located 
+  The places are located and sorted based on their radius within the selected radius.
   
   This sample app is beneficial to those, trying to learn above mentioned technologies or are beginners in such concepts 
   in android.
